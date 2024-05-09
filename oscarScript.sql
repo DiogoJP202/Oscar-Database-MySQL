@@ -1,20 +1,19 @@
 use oscar_database;
 
 -- 1- Quantas vezes Natalie Portman foi indicada ao Oscar?
-SELECT * FROM filmes WHERE nome_do_indicado = "Natalie Portman" and vencedor = "sim";
--- SELECT * FROM usuario WHERE nome = "Diogo";
--- WHERE nome_do_indicado = "Natalie Portman"
+SELECT COUNT(vencedor) FROM filmes WHERE nome_do_indicado = "Natalie Portman";
+
 -- 2- Quantos Oscars Natalie Portman ganhou?
-SELECT COUNT(*) FROM filmes WHERE nome_do_indicado = "Natalie Portman" and vencedor = "sim";
+SELECT COUNT(*) FROM filmes WHERE nome_do_indicado = "Natalie Portman" AND vencedor = "sim";
 
 -- 3- Amy Adams já ganhou algum Oscar?
-SELECT COUNT(*) FROM filmes WHERE nome_do_indicado = "Amy Adams" and vencedor = "sim";
+SELECT vencedor FROM filmes WHERE nome_do_indicado = "Amy Adams" AND vencedor = "sim" LIMIT 1;
 
 -- 4- A série de filmes Toy Story ganhou um Oscar em quais anos?
-SELECT * FROM filmes WHERE nome_filme = "Toy Story" and vencedor = "sim";
+SELECT nome_filme, ano_filmagem FROM filmes WHERE nome_filme LIKE "%Toy Story%" AND vencedor = "sim";
 
 -- 5- A partir de que ano que a categoria "Actress" deixa de existir? 
-SELECT ano_filmagem, categoria FROM filmes WHERE categoria = "actress" ORDER BY ano_filmagem DESC LIMIT 1;
+SELECT ano_filmagem, categoria FROM filmes WHERE categoria LIKE "%actress%" ORDER BY ano_filmagem DESC LIMIT 1;
 
 -- 6- O primeiro Oscar para melhor Atriz foi para quem? Em que ano?
 SELECT nome_do_indicado, ano_filmagem FROM filmes WHERE categoria = "actress" ORDER BY ano_filmagem LIMIT 1;
