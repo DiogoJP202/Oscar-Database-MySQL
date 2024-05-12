@@ -192,7 +192,7 @@ Este é um banco de dados do oscar e eu estarei fazendo algumas operaçõe utili
 ```
 ## Retorno
 |id_registro|ano_filmage|ano_cerimonia|edicao_cerimonia|categoria|nome_do_indicado|nome_filme|vencedor|
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 |9280|2011|2012|84|ACTRESS IN A LEADING ROLE|Meryl Streep|The Iron Lady|Sim|
 |9307|2011|2012|84|DIRECTING|Michel Hazanavicius|The Artist|Sim|
 |9387|2011|2012|84|HONORARY AWARD|James Earl Jones|legacy of consistent excellence and uncommon versatility|Sim|
