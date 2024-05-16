@@ -1,5 +1,5 @@
 # oscar_database
-Este é um banco de dados do oscar e eu estarei fazendo algumas operaçõe utilizando **mySQL**.
+Este é um banco de dados do oscar e eu estarei fazendo algumas operações utilizando **mySQL**.
 
 1. Quantas vezes *Natalie Portman* foi indicada ao Oscar?
 ```mysql
